@@ -49,6 +49,7 @@ public class MainActivity extends ActionBarActivity {
     /**
      * A placeholder fragment containing a simple view.
      */
+    
     public static class PlaceholderFragment extends Fragment {
 
         public PlaceholderFragment() {
