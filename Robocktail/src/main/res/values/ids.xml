@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item type="id" name="header_search_field">false</item>
+    <item type="id" name="header_search_field_btn">false</item>
+    <item type="id" name="header_menu_icon">false</item>
+    <item type="id" name="editTextSearch" id="0x7f0b003c" />
+    <item type="id" name="searchFrameLayout" id="0x7f0b0034" />
+    <item type="id" name="nameFrameLayout" id="0x7f0b0017" />
+    <item type="id" name="buttonSelectBase">false</item>
+    <item type="id" name="buttonSelectColor">false</item>
+    <item type="id" name="buttonSelectImage">false</item>
+    <item type="id" name="imageFrameLayout">false</item>
+    <item type="id" name="imageFrameLayoutButtonArea">false</item>
+    <item type="id" name="imageLinearLayout">false</item>
+    <item type="id" name="ImageView01">false</item>
+    <item type="id" name="textViewVersion">false</item>
+    <item type="id" name="textViewLink1">false</item>
+    <item type="id" name="textViewLink2">false</item>
+    <item type="id" name="textViewLink3">false</item>
+    <item type="id" name="textViewName">false</item>
+</resources>
