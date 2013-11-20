@@ -31,55 +31,12 @@ public class CocktailMain extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        setEditText();
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.activity_main, menu);
         return true;
-    }
-    
-    
-    //EditView
-    private void setEditText()
-    {
-    	//searchEdit = (EditText) findViewById(R.id.editTextSearch);
-    	searchEdit.addTextChangedListener(new TextWatcher() {
-    		
-            public void afterTextChanged(Editable editable){
-            	oldText = editable.toString();
-            }
-
-            public void beforeTextChanged(CharSequence charsequence, int start,int count,int after){}
-
-            
-            public void onTextChanged(CharSequence charsequence, int start,int count,int after){}
-        });	
-    	
-    	searchEdit.setOnKeyListener(new AdapterView.OnKeyListener() {
-    	public boolean onKey(View v, int keyCode, KeyEvent event) {
-
-    	        //EnterKey
-    			if (event.getAction() == KeyEvent.ACTION_DOWN
-    					&& keyCode == KeyEvent.KEYCODE_ENTER) {
-    				
-    	            //ferme le clavier virtuel
-    				InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-    				inputMethodManager.hideSoftInputFromWindow(v.getWindowToken(), 0);
-
-    	            //recherche
-    				/*EditText word = (EditText) findViewById(R.id.editTextSearch);
-    				if (word != null && word.length() != 0) {
-                        flg = 1;
-                        
-                    }*/
-    				return true;
-    			}
-    			return false;
-    		}
-    	});
-
     }
 }
 
